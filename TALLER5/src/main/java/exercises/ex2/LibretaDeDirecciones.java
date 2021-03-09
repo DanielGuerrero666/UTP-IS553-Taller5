@@ -9,45 +9,85 @@ import exercises.ex1.RegistroLibreta;
 
 public class LibretaDeDirecciones{
     private static List<RegistroLibreta> libreta = new ArrayList<>();
-    private Integer indexEntrada = 0;
+
 
     public static void main(String[] args) {
         añadirEntrada();
+        verTodasLasEntradas();
+        actualizacionDeUnaEntrada(0);
+        verTodasLasEntradas();
     }
-
     // Métodos
 
     public static void añadirEntrada(){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Complete la informacion del registro de la siguiente forma,"+
-             "'Nombre', 'Dirección', 'Número de telefono', 'Correo electronico'");
+        System.out.println("\nComplete la informacion del registro de la siguiente forma "+
+             "|| Nombre || Dirección || Número de telefono || Correo electronico ||");
 
         RegistroLibreta entrada = new RegistroLibreta(scan.next(), scan.next(), scan.next(), scan.next());
         libreta.add(entrada);
-        scan.close();
     }
 
-    public static void borrarEntrada(){
-        Scanner scan = new Scanner(System.in);
-        var index = scan.nextInt();
-        
+    public static void borrarEntrada(int index){        
         if(index >= 0 && index < libreta.size()){
             libreta.remove(index);
         }
         else{
             System.out.println("Error: index_out_of_limits");
         }
-        scan.close();
     }
 
     public static void verTodasLasEntradas(){
-        for(int i=0;i<libreta.size();i++) {
-            System.out.println("|| "+libreta[i].getNombre()+" || "+libreta[i].getDireccion()+" || "+libreta[i].getNumeroDeTelefono()+" || "+
-                libreta[i].getCorreoElectronico());
+        for(RegistroLibreta aux : libreta) {
+            System.out.println("|| "+aux.getNombre()+" || "+aux.getDireccion()+" || "+aux.getNumeroDeTelefono()+" || "+
+                aux.getCorreoElectronico()+" || ");
         }
     }
 
+    public static void actualizacionDeUnaEntrada(int index){      
+        RegistroLibreta aux;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Que dato desea actualizar: ");
+        System.out.println("1) Nombre ");
+        System.out.println("2) Direccion ");
+        System.out.println("3) Numero telefonico ");
+        System.out.println("4) e-mail \n");
+        int op = scan.nextInt();
+
+
+        switch(op){
+        case 1:
+            System.out.println("\nIngrese un nuevo nombre");
+            aux = libreta.get(index);
+            aux.setNombre(scan.next());
+            libreta.set(index, aux);
+            break;
+        case 2:
+            System.out.println("\nIngrese una nueva direccion");
+            aux = libreta.get(index);
+            aux.setDireccion(scan.next());
+            libreta.set(index, aux);
+            break;
+        case 3:
+            System.out.println("\nIngrese un nuevo numero de telefono");
+            aux = libreta.get(index);
+            aux.setNumeroDeTelefono(scan.next());
+            libreta.set(index, aux);
+            break;
+        case 4:
+            System.out.println("\nIngrese un nuevo correo electronico");
+            aux = libreta.get(index);
+            aux.setCorreoElectronico(scan.next());
+            libreta.set(index, aux);
+            break;
+        default:
+            System.out.println("\nOpcion no valida");
+            actualizacionDeUnaEntrada(index);
+            break;
+        }
+    }
 }
 
 
