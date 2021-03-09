@@ -1,11 +1,11 @@
 // LibretaDeDirecciones, JavaSE-11, 05/03/2021 //
 
-package main.java.exercises.ex2;
+package exercises.ex2;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import main.java.exercises.ex1.RegistroLibreta;
+import exercises.ex1.RegistroLibreta;
 
 public class LibretaDeDirecciones{
     private static List<RegistroLibreta> libreta = new ArrayList<>();
@@ -13,16 +13,6 @@ public class LibretaDeDirecciones{
 
     public static void main(String[] args) {
         añadirEntrada();
-    }
-
-    // Mutadores 
-
-    public RegistroLibreta[] getLibreta() {
-        return libreta;
-    }
-
-    public void setLibreta(RegistroLibreta[] libreta) {
-        this.libreta = libreta;
     }
 
     // Métodos
@@ -57,6 +47,7 @@ public class LibretaDeDirecciones{
                 libreta[i].getCorreoElectronico());
         }
     }
+
 }
 
 

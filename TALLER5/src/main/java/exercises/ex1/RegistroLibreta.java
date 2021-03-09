@@ -1,6 +1,6 @@
 // RegistroLibreta, JavaSE-11, 05/03/2021 
 
-package java.exercises.ex1;
+package exercises.ex1;
 
     public class RegistroLibreta{
         private String nombre;
