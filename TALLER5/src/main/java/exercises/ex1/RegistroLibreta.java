@@ -1,6 +1,6 @@
-// RegistroLibreta, JavaSE-11, 05/03/2021 //
+// RegistroLibreta, JavaSE-11, 05/03/2021 
 
-package com.juandanielnoriegaguerrero.prg4.ex1;
+package java.exercises.ex1;
 
     public class RegistroLibreta{
         private String nombre;
