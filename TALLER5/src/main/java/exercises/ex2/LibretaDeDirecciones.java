@@ -10,13 +10,6 @@ import exercises.ex1.RegistroLibreta;
 public class LibretaDeDirecciones{
     private static List<RegistroLibreta> libreta = new ArrayList<>();
 
-
-    public static void main(String[] args) {
-        añadirEntrada();
-        verTodasLasEntradas();
-        actualizacionDeUnaEntrada(0);
-        verTodasLasEntradas();
-    }
     // Métodos
 
     public static void añadirEntrada(){
