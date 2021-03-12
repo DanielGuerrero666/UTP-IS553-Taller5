@@ -10,6 +10,5 @@ public class Main{
 
         System.out.println(Matematicas.min(a)); 
         System.out.println(Matematicas.max(a)); 
-
     }
 }

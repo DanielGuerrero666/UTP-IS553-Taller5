@@ -8,6 +8,6 @@ public class Main {
 
         System.out.print("Ingrese el numero de lineas del diamante: ");
         DiamondGenerator diamante = new DiamondGenerator(scan.nextInt());
-        DiamondGenerator.generator();
+        System.out.println(diamante.generator());;
     }
 }

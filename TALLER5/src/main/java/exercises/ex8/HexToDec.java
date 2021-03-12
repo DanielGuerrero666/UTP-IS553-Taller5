@@ -7,14 +7,16 @@ public class HexToDec{
         this.hex = hex;
     }
 
-    public void decimalConvert(){
+    public String decimalConvert(){
+        String result="";
 
         try {
             detectException(hex);
-            System.out.println(Integer.parseInt(hex,16));
+            result = Integer.toString(Integer.parseInt(hex,16));
         } catch (HexException e) {
-            System.out.println("Error: "+e.getMessage());
+            result = "Error: "+e.getMessage();
         }
+        return result;
 
     }
 

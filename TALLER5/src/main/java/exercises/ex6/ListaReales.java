@@ -4,15 +4,26 @@ package exercises.ex6;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class ListaReales implements Estadisticas{
     private static List<Integer> listaDeNumReales = new ArrayList<>();
     private static Integer n;  // Total de elementos de la lista.
 
+    // Setters & Getters
+    
+    public void setN(Integer n) {
+        ListaReales.n = n;
+    }
+
+    public Integer getN(){
+        return n;
+    }
+
     // Métodos
 
-    public static void añadirNumeros(){
+    public void añadirNumeros(){
         Scanner scan = new Scanner(System.in);
         System.out.print("Ingrese un total de datos: ");
         n = scan.nextInt();
@@ -20,6 +31,15 @@ public class ListaReales implements Estadisticas{
         for(int i=0;i<n;i++){
             System.out.print("Digite un numero para la lista: ");
             listaDeNumReales.add(scan.nextInt());
+        }
+    }
+
+    // Lista de datos random, creada para testear
+    public void generarListaDefault(Integer n){
+        Random r = new Random();
+
+        for(int i=0;i<n;i++){
+            listaDeNumReales.add(i);
         }
     }
 

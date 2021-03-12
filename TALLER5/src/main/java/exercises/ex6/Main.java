@@ -1,7 +1,5 @@
 package exercises.ex6;
 
-import exercises.ex1.main;
-
 public class Main {
     public static void main(String[] args) {
         ListaReales datos = new ListaReales();

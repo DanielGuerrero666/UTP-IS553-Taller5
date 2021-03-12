@@ -12,7 +12,7 @@ public class LibretaDeDirecciones{
 
     // Métodos
 
-    public static void añadirEntrada(){
+    public void añadirEntrada(){
         Scanner scan = new Scanner(System.in);
 
         System.out.println("\nComplete la informacion del registro de la siguiente forma "+
@@ -22,7 +22,7 @@ public class LibretaDeDirecciones{
         libreta.add(entrada);
     }
 
-    public static void borrarEntrada(int index){        
+    public void borrarEntrada(int index){        
         if(index >= 0 && index < libreta.size()){
             libreta.remove(index);
         }
@@ -31,14 +31,14 @@ public class LibretaDeDirecciones{
         }
     }
 
-    public static void verTodasLasEntradas(){
+    public void verTodasLasEntradas(){
         for(RegistroLibreta aux : libreta) {
             System.out.println("|| "+aux.getNombre()+" || "+aux.getDireccion()+" || "+aux.getNumeroDeTelefono()+" || "+
                 aux.getCorreoElectronico()+" || ");
         }
     }
 
-    public static void actualizacionDeUnaEntrada(int index){      
+    public void actualizacionDeUnaEntrada(int index){      
         RegistroLibreta aux;
 
         Scanner scan = new Scanner(System.in);

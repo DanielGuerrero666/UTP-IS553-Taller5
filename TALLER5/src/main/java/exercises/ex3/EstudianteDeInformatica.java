@@ -39,13 +39,13 @@ public class EstudianteDeInformatica extends Estudiante{
 
     // Métodos
 
-    public static void agregarLenguaje(){
+    public void agregarLenguaje(){
         Scanner scan = new Scanner(System.in);
         String lenguaje = scan.next();
         lenguajesDominados.add(lenguaje);
     }
 
-    public static void verLenguajesDominados(){
+    public void verLenguajesDominados(){
         for(String lenguaje : lenguajesDominados){
             System.out.println(lenguaje);
         }

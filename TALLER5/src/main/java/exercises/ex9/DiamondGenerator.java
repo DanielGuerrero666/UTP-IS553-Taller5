@@ -7,7 +7,8 @@ public class DiamondGenerator {
         this.n = n;
     }
 
-    public static void generator(){
+    public String generator(){
+        String result="";
 
         try {
             detectException(n);
@@ -23,9 +24,11 @@ public class DiamondGenerator {
                 asteriscos(2*n - 2*i);
                 System.out.println();
             }
+            result="";
         } catch (DiamondException e) {
-            System.out.println("Error: "+e.getMessage()); 
+            result = "Error: "+e.getMessage();
         }
+        return result;
     }
     
     public static void espaciado(Integer limit){
