@@ -1,12 +1,17 @@
 package exercises.ex2;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         LibretaDeDirecciones lista = new LibretaDeDirecciones();
-        Integer index =0;
         lista.añadirEntrada();
-        lista.borrarEntrada(index);
+        System.out.println("Indique la posicion en la lista que desea eliminar: ");
+        lista.borrarEntrada(scan.nextInt());
         lista.verTodasLasEntradas();
-        lista.actualizacionDeUnaEntrada(index);
+        System.out.println("Indique la posicion en la lista que desea actualizar:" );
+        lista.actualizacionDeUnaEntrada(scan.nextInt());
+        scan.close();
     }
 }
