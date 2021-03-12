@@ -1,11 +1,19 @@
+/*
+    DiamonGenerator, JavaSE-11, 10/03/2021 
+*/
+
 package exercises.ex9;
 
 public class DiamondGenerator {
     private static Integer n;
 
+    // Constructor
+
     public DiamondGenerator(Integer n){
-        this.n = n;
+        DiamondGenerator.n = n;
     }
+
+    // Métodos
 
     public String generator(){
         String result="";

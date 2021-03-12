@@ -34,8 +34,8 @@ public class ListaReales implements Estadisticas{
         }
     }
 
-    // Lista de datos random, creada para testear
-    public void generarListaDefault(Integer n){
+    
+    public void generarListaDefault(Integer n){ // Lista de datos random, creada para testear
         Random r = new Random();
 
         for(int i=0;i<n;i++){
@@ -43,6 +43,7 @@ public class ListaReales implements Estadisticas{
         }
     }
 
+    // Métodos(Interfaz)
 
     @Override
     public Integer obtenerMinimo(){

@@ -1,11 +1,19 @@
+/*
+    HexToDec, JavaSE-11, 10/03/2021 
+*/
+
 package exercises.ex8;
 
 public class HexToDec{
     private static String hex;
     
+    // Constructor
+
     public HexToDec(String hex){
-        this.hex = hex;
+        HexToDec.hex = hex;
     }
+
+    // Métodos
 
     public String decimalConvert(){
         String result="";

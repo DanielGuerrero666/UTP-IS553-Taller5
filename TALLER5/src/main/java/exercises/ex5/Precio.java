@@ -1,5 +1,6 @@
-// Precio, JavaSE-11, 09/03/2021 
-
+/*
+    Precio, JavaSE-11, 09/03/2021 
+*/
 package exercises.ex5;
 
 public class Precio{

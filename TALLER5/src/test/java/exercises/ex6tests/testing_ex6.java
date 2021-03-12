@@ -1,3 +1,7 @@
+/*
+    testing_ex6, JavaSE-11, 11/03/2021, JUnit4
+*/
+
 package exercises.ex6tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,7 +11,13 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import exercises.ex6.ListaReales;
 
-public class testing_ex6 {
+/*
+    Existe un error que no pude encontrar en esta seccion de los tests, al ejecutarlos todos a la vez
+    dos de ellos fallaran, no se sabe si es por un desvio de datos, o algun tipo de bug en las
+    clases de "org.junit.jupiter", al ejecutarlos de forma individual cada uno, demuestran funcionar.
+*/
+
+public class testing_ex6 { 
 
     @DisplayName("Obtener el minimo valor de la lista")
     @ParameterizedTest()

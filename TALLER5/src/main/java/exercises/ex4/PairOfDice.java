@@ -1,5 +1,6 @@
-// PairOfDice, JavaSE-11, 09/03/2021 
-
+/*
+    PairOfDice, JavaSE-11, 09/03/2021 
+*/
 package exercises.ex4;
 
 import java.util.Random;
@@ -22,7 +23,7 @@ public class PairOfDice implements Dice{
     @Override
     public void roll(){
         Random azar = new Random();
-        this.dice1 = azar.nextInt(6)+1;
-        this.dice2 = azar.nextInt(6)+1;
+        this.dice1 = azar.nextInt(6)+1; // Estos valores constantes se refieren a un intervalo [0,6]
+        this.dice2 = azar.nextInt(6)+1; // Estos valores constantes se refieren a un intervalo [0,6]
     }
 }

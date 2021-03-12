@@ -1,5 +1,6 @@
-// Factura, JavaSE-11, 09/03/2021 
-
+/*
+    Factura, JavaSE-11, 09/03/2021 
+*/
 package exercises.ex5;
 
 import java.util.Scanner;
@@ -8,17 +9,21 @@ public class Factura extends Precio{
     private static String emisor;
     private static String cliente;
 
+    // Constructor
+
     public Factura(String emisor, String cliente) {
         this.setEmisor(emisor);
         this.setCliente(cliente);
     }
+
+    // Setters & Getters
 
     public String getCliente() {
         return cliente;
     }
 
     public void setCliente(String cliente) {
-        this.cliente = cliente;
+        Factura.cliente = cliente;
     }
 
     public String getEmisor() {
@@ -26,8 +31,10 @@ public class Factura extends Precio{
     }
 
     public void setEmisor(String emisor) {
-        this.emisor = emisor;
+        Factura.emisor = emisor;
     }
+
+    // Métodos
     
     public static void imprimirFactura(){
         Scanner scan = new Scanner(System.in);

@@ -1,5 +1,7 @@
-// Estudiante, JavaSE-11, 09/03/2021 
-
+/*
+    Estudiante, JavaSE-11, 09/03/2021 
+    Codigo de la clase Estudiante
+*/
 package exercises.ex3;
 
 public class Estudiante{
@@ -10,6 +12,7 @@ public class Estudiante{
     protected String institucion;
 
     // Constructor 
+    
     public Estudiante(String nombre, String codigo, String numeroDeTelefono, String correoElectronico, String institucion) {
         setNombre(nombre);
         setCodigo(codigo);
@@ -18,7 +21,8 @@ public class Estudiante{
         setInstitucion(institucion);
     }
 
-    //Getters & Setters
+    // Setters & Getters
+
     public void setNombre(String nombre){
         this.nombre = nombre;
     }

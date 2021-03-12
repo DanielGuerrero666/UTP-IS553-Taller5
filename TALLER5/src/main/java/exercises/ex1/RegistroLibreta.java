@@ -1,5 +1,7 @@
-// RegistroLibreta, JavaSE-11, 08/03/2021 
-
+/*
+     RegistroLibreta, JavaSE-11, 08/03/2021 
+     Codigo de la clase RegistroLibreta
+*/
 package exercises.ex1;
 
     public class RegistroLibreta{
@@ -8,7 +10,7 @@ package exercises.ex1;
         private String numeroDeTelefono;
         private String correoElectronico;
 
-        // Constructor de objetos tipo RegistroLibreta //
+        // Constructor
 
         public RegistroLibreta(String nombre, String direccion, String numeroDeTelefono, String correoElectronico) {
             this.setNombre(nombre);
@@ -17,7 +19,7 @@ package exercises.ex1;
             this.setCorreoElectronico(correoElectronico);
         }
 
-        // Métodos Mutadores de atributos // 
+        // Setters & Getters
 
         public String getCorreoElectronico() {
             return correoElectronico;

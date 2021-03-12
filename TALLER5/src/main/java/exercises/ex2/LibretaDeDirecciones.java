@@ -1,5 +1,6 @@
-// LibretaDeDirecciones, JavaSE-11, 08/03/2021 //
-
+/*
+    LibretaDeDirecciones, JavaSE-11, 08/03/2021
+*/
 package exercises.ex2;
 
 import java.util.ArrayList;
